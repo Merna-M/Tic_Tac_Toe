@@ -44,9 +44,9 @@ int main()
             if(level == 1){
                 OnePlayer(player,1);
             }else if(level == 2){
-            OnePlayer(player,1000);
+				OnePlayer(player,4);
             }else {
-                OnePlayer(player,400000000);
+                OnePlayer(player,9);
             }
 
         }

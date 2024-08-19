@@ -221,6 +221,11 @@ void OnePlayer(char player , int level){
 
 int minimax(int depth, bool isMax , bool first){
     char result = CheckWin(); // 'X' if X , 'O' if O , 1 if end with no winner , 0 if still no winner
+	if(result == 'X'){ // maximizing
+		result = 2;
+	}else if(result == 'O'){ // minimizing
+		result = -2;
+	}
     if(result != 0 || depth == 0){
         return result;
     }
